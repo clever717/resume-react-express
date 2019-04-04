@@ -1,19 +1,14 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: [
+        './src/index.js',
+        './src/index.css'
+    ],
 
     output: {
         path: __dirname + '/public/',
         filename: 'bundle.js'
-    },
-
-    devServer: {
-        hot: true,
-        inline: true,
-        host: '0.0.0.0',
-        port: 4000,
-        contentBase: __dirname + '/public/',
     },
 
     module: {
@@ -25,6 +20,17 @@ module.exports = {
                     presets: ['es2015', 'react']
                 })],
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                loader: 'style!css-loader'
+            },
+            {
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    limit: 25000,
+                },
             }
         ]
     },
