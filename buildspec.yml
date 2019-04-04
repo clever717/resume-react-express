@@ -1,9 +1,13 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo Installing babel-cli
+      - npm install -g babel-cli
   pre_build:
     commands:
-      - echo Installing source NPM dependencied....
+      - echo Installing source NPM dependencies....
       - npm install
   build:
     commands:
