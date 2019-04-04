@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencied....
+      - npm install
+  build:
+    commands:
+      - echo Build resume-react-express on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Build Completed on `date`
+
+cache:
+  paths:
+    - '/node_modules/**/*'
