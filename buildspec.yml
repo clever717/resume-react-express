@@ -16,6 +16,9 @@ phases:
   post_build:
     commands:
       - echo Build Completed on `date`
+artifacts:
+  files:
+    - /
 
 cache:
   paths:
