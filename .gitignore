@@ -2,3 +2,5 @@
 .tern-project
 node_modules
 /.idea/
+/resume-react-express.iml
+/package-lock.json
