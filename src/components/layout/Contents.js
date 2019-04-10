@@ -17,9 +17,6 @@ class Contents extends Component {
 
               <LatestProjects/>
 
-              <WorkExperience/>
-
-              <MyGithub/>
             </div>
             <div className="secondary col-lg-4 col-12">
               <BasicInformation/>
@@ -27,6 +24,10 @@ class Contents extends Component {
               <Skills/>
 
               <Education/>
+
+              <WorkExperience/>
+
+              <MyGithub/>
             </div>
           </div>
         </div>

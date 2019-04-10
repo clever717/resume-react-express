@@ -8,7 +8,7 @@ class AboutMe extends Component {
             <h2 className="heading">About Me</h2>
             <div className="content">
               <p>
-                Hi. My Name is Hansoo Lee.
+                안녕하세요.
               </p>
 
             </div>

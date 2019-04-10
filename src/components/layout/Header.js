@@ -1,7 +1,21 @@
 import React, {Component} from 'react';
 import profile from '../../assets/images/profile.png';
+import html2canvas from "html2canvas";
+import jsPDF from 'jspdf'
 
 class Header extends Component {
+  download(e) {
+    e.preventDefault();
+    html2canvas(document.getElementById('root'))
+    .then((canvas) => {
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF();
+      pdf.addImage(imgData, 'PNG', 0, 0);
+      pdf.save("download.pdf");
+    });
+    ;
+
+  }
   render() {
     return (
         <header className="header">
@@ -22,9 +36,9 @@ class Header extends Component {
                     className="fab fa-codepen"></i></a></li>
               </ul>
             </div>
-            <a className="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/"
-               target="_blank" rel="noopener noreferrer"><i
-                className="fas fa-paper-plane"></i> Contact Me</a>
+            <a className="btn btn-cta-primary float-right" href="#"
+               onClick={this.download}>
+              <i className="fas fa-download"></i> Download PDF</a>
           </div>
         </header>
     );

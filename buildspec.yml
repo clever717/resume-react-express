@@ -24,6 +24,7 @@ artifacts:
     - 'src/**/*'
     - 'node_modules/**/*'
     - 'package.json'
+    - 'appspec.yml'
   name: resume-react-express_$(date +%Y-%m-%d)
   discard-paths: yes
 
