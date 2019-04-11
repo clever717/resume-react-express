@@ -11,11 +11,11 @@ phases:
       - npm install
   build:
     commands:
-      - echo Build resume-react-express on $(date +%Y-%m-%d)
+      - echo Build resume-react-express on $(date +%Y-%m-%d_%H%M)
       - npm run build
   post_build:
     commands:
-      - echo Build Completed on $(date +%Y-%m-%d)
+      - echo Build Completed on $(date +%Y-%m-%d_%H%M)
 artifacts:
   files:
     - 'build/**/*'
@@ -25,7 +25,7 @@ artifacts:
     - 'node_modules/**/*'
     - 'package.json'
     - 'appspec.yml'
-  name: resume-react-express_$(date +%Y-%m-%d)
+  name: resume-react-express_$(date +%Y-%m-%d_%H%M)
 
 cache:
   paths:
