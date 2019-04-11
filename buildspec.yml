@@ -18,15 +18,14 @@ phases:
       - echo Build Completed on $(date +%Y-%m-%d)
 artifacts:
   files:
-    - 'build'
-    - 'public'
-    - 'server'
-    - 'src'
-    - 'node_modules'
+    - 'build/**/*'
+    - 'public/*'
+    - 'server/**/*'
+    - 'src/**/*'
+    - 'node_modules/**/*'
     - 'package.json'
     - 'appspec.yml'
   name: resume-react-express_$(date +%Y-%m-%d)
-  discard-paths: yes
 
 cache:
   paths:
