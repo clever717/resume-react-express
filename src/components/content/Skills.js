@@ -25,14 +25,8 @@ class Skills extends Component {
           <div className="section-inner">
             <h2 className="heading">Skills</h2>
             <div className="content">
-              <p className="intro">
-                Intro about your skills goes here. Keep the list lean and only show your primary skillset.
-                You can
-                always provide a link to your Linkedin or Coderwall profile so people can get more info
-                there.
-              </p>
 
-              <div className="skillset">
+              <div className="skillset testimonials">
 
                 {
                   this.state.skills.map((skill, i) => {
@@ -41,12 +35,11 @@ class Skills extends Component {
                         <h3 className="level-title">{skill.title}
                           <span className="level-label" data-toggle="tooltip" data-placement="left" data-animation="true"
                                 title={skill.description}>
-                        <i className="fas fa-info-circle"/>{skill.level}
-                      </span>
+                          </span>
                         </h3>
-                        <div className="level-bar">
-                          <div className="level-bar-inner" data-level={skill.graph + '%'}/>
-                        </div>
+                        <blockquote className="quote">
+                          <p>{skill.description}</p>
+                        </blockquote>
                       </div>
                     );
                   })

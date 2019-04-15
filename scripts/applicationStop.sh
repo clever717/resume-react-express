@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pm2 delete main
+pm2 kill
