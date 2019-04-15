@@ -8,9 +8,4 @@ permissions:
     pattern: "**"
     owner: ubuntu
     group: ubuntu
-hooks:
-  AfterInstall:
-    - location: scripts/applicationStop.sh
-      timeout: 180
-    - location: scripts/applicationStart.sh
-      timeout: 180
+

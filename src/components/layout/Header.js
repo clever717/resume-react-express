@@ -32,9 +32,6 @@ class Header extends Component {
                 </li>
               </ul>
             </div>
-            <!--<a className="btn btn-cta-primary float-right" href="#"
-               onClick={this.download}>
-              <i className="fas fa-download"></i> Download PDF</a>-->
           </div>
         </header>
     );
