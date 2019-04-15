@@ -25,15 +25,11 @@ class Header extends Component {
               <h1 className="name">Hans Lee</h1>
               <h2 className="desc">Web App Developer</h2>
               <ul className="social list-inline">
-                <li className="list-inline-item"><a href="#"><i className="fab fa-twitter"></i></a></li>
-                <li className="list-inline-item"><a href="#"><i className="fab fa-google-plus-g"></i></a>
+                <li className="list-inline-item"><a href="https://www.linkedin.com/in/hans89/"><i className="fab fa-linkedin-in"></i></a>
                 </li>
-                <li className="list-inline-item"><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                <li className="list-inline-item"><a href="#"><i className="fab fa-github-alt"></i></a></li>
-                <li className="list-inline-item"><a href="#"><i className="fab fa-stack-overflow"></i></a>
+                <li className="list-inline-item"><a href="https://github.com/clever717/"><i className="fab fa-github"></i></a></li>
+                <li className="list-inline-item"><a href="https://www.instagram.com/lxxhans/"><i className="fab fa-instagram"></i></a>
                 </li>
-                <li className="list-inline-item last-item"><a href="#"><i
-                    className="fab fa-codepen"></i></a></li>
               </ul>
             </div>
             <a className="btn btn-cta-primary float-right" href="#"
